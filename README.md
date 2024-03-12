@@ -12,7 +12,7 @@
 -   No ownership: student doesn't own sport
 -   No lifecycle dependency: If one object is destroyed, the other can continue to exist - If one student stop playing, sport still exist. vice versa
 
-```
+```java
 public class Student{
 	public void play(Sport: sport){
 		execute.play(sport);
@@ -25,7 +25,7 @@ public class Student{
 -   week has-a relationship: a whole has parts that belongs to it
 -   no lifecycle dependency: exist independent
 
-```
+```java
 class Airliner{
 	private ArrayList<CrewMember> crew;
 
@@ -46,14 +46,13 @@ class Airliner{
 -   Part exclusive belong to whole
 -   Lifecycle dependency
 
-```
+```java
 public class House{
 	private Room room;
 	public House(){
 		room = new Room();
 	}
 }
-
 ```
 
 -   room created at the same time with the House
@@ -65,7 +64,7 @@ public class House{
 -   Car depend on Fuel but NO ownership or direct association
 -
 
-```
+```java
 class Car{
 	public void start(Fuel fuel){}
 }
@@ -73,7 +72,6 @@ class Car{
 class Fuel{
 
 }
-
 ```
 
 ## UML
